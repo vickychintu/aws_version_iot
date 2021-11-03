@@ -1,0 +1,90 @@
+.container {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  min-height: 80vh;
+  max-height: fit-content;
+  width: 100%;
+  margin: 0%;
+}
+hr {
+  border-top: 3px solid black;
+}
+.tabs {
+  display: flex;
+  align-items: flex-start;
+  height: 5vh;
+}
+.tabnames {
+  height: 100%;
+  width: 8%;
+  background: none;
+  border-color: black;
+  border-radius: 4px;
+  left: 0px;
+}
+.tabnames:hover {
+  background-color: pink;
+}
+.calender {
+  background-color: wiite;
+  height: 50px;
+  width: 50px;
+}
+rdrDateDisplayWrapper {
+  background-color: white;
+}
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+.mb-3 {
+  position: sticky;
+}
+.cal {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.wraper {
+  width: 100%;
+}
+
+.customDatePickerWidth,
+.customDatePickerWidth > div.react-datepicker-wrapper,
+.customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  .customDatePickerWidth
+  > div
+  > div.react-datepicker__input-container
+  input {
+  width: 90%;
+  margin: auto;
+}
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.cal {
+  background-color: white;
+  height: 100%;
+}
+.infotext {
+  background-color: white;
+  padding-top: 17%;
+  padding-bottom: 6%;
+  margin: 0;
+}
+hr {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.dodiv {
+  transform: scale(0.8);
+}
+.tabdes {
+  margin: 0;
+}
