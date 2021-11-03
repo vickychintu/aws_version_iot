@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 
 let a;
-const socket = io('http://localhost:8008/',{
+const socket = io('https://magnetic-paypal-dialogue-aged.trycloudflare.com',{
   transports: ['websocket', 'polling']
 });
 
