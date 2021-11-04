@@ -1,5 +1,6 @@
 import "./Dashboard.css";
 import Button from "react-bootstrap/Button";
+import { ListGroup } from "react-bootstrap";
 import { Container, Row, Col } from "react-grid-system";
 import BarChart from "./BarChart";
 import Donut from "./Charts/Donut";
@@ -82,12 +83,19 @@ function Dashboard() {
                     <Donut />
                   </div>
                 </Col>
-                <Col sm={3} className="cal">
+                <Col sm={3} className="call">
                   <Container className="infotext">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  <ListGroup>
+                    <ListGroup.Item>MachineName :<br /> Machine1</ListGroup.Item>
+                    <ListGroup.Item>MachineID : blr12021</ListGroup.Item>
+                    {/* <ListGroup.Item>MachineLocation : Factory A</ListGroup.Item> */}
+                    <ListGroup.Item>MachineType : CNC_Router</ListGroup.Item>
+                    <ListGroup.Item>FactoryLocation : BENGALURU</ListGroup.Item>
+                  </ListGroup>
+                    {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Earum vel, ratione iure a necessitatibus porro quidem alias
                     molestiae soluta omnis corporis, ex ea commodi cupiditate
-                    sint nobis! Delectus, dignissimos aspernatur!
+                    sint nobis! Delectus, dignissimos aspernatur! */}
                   </Container>
                 </Col>
               </Row>
@@ -117,7 +125,7 @@ function Dashboard() {
                   </div>
                 </Col>
               </Row>
-              {/* <br /> */}
+              
               <hr />
               <Row debug>
                 <Col sm={6}>
@@ -128,12 +136,15 @@ function Dashboard() {
                     <Donut />
                   </div>
                 </Col>
-                <Col sm={3} className="cal">
+                <Col sm={3} className="call">
                   <Container className="infotext">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Earum vel, ratione iure a necessitatibus porro quidem alias
-                    molestiae soluta omnis corporis, ex ea commodi cupiditate
-                    sint nobis! Delectus, dignissimos aspernatur!
+                    <ListGroup>
+                    <ListGroup.Item>MachineName :<br /> Machine2</ListGroup.Item>
+                    <ListGroup.Item>MachineID : blr12022</ListGroup.Item>
+                    {/* <ListGroup.Item>MachineLocation : Factory A</ListGroup.Item> */}
+                    <ListGroup.Item>MachineType : CNC_Router_AMC</ListGroup.Item>
+                    <ListGroup.Item>FactoryLocation : BENGALURU</ListGroup.Item>
+                  </ListGroup>
                   </Container>
                 </Col>
               </Row>

@@ -13,7 +13,7 @@ import {
 } from 'recharts';
 
 let a;
-const socket = io('https://weird-release-skill-attend.trycloudflare.com',{
+const socket = io('http://localhost:8009',{
   transports: ['websocket', 'polling']
 });
 

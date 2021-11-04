@@ -45,6 +45,13 @@ rdrDateDisplayWrapper {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.call {
+  margin: auto;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  background-color: white;
+  height: 100%;
+}
 .wraper {
   width: 100%;
 }
@@ -74,8 +81,8 @@ rdrDateDisplayWrapper {
 }
 .infotext {
   background-color: white;
-  padding-top: 17%;
-  padding-bottom: 6%;
+  padding-top: 15%;
+  padding-bottom: 3%;
   margin: 0;
 }
 hr {
