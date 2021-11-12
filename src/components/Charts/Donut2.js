@@ -6,14 +6,18 @@ let a;
 const socket = io('http://localhost:8008/', {
   transports: ['websocket', 'polling'],
 });
-let Donut = (props) => {
+let Donut2 = (props) => {
+  console.log('hio', props.val);
   const [data, setData] = useState([[]]);
   const state = {
     labels: ['Total effective Hours', 'Uneffective Hours'],
     datasets: [
       {
         label: 'My First Dataset',
-        data: [props.val, 24 - props.val],
+        data: [
+          props.val[0] ? props.val[0].mtol : 0,
+          props.val[0] ? props.val[0].mlen * 24 - props.val[0].mtol : 0,
+        ],
         backgroundColor: [
           'rgb(255, 99, 132)',
           'rgb(54, 162, 235)',
@@ -40,4 +44,4 @@ let Donut = (props) => {
     </>
   );
 };
-export default Donut;
+export default Donut2;
